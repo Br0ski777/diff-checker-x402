@@ -33,6 +33,57 @@ Do NOT use for text classification -- use text_classify_content instead. Do NOT 
         },
         required: ["text1", "text2"],
       },
+      outputSchema: {
+          "type": "object",
+          "properties": {
+            "diff": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "added",
+                      "removed",
+                      "unchanged"
+                    ]
+                  },
+                  "value": {
+                    "type": "string"
+                  },
+                  "line": {
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            "summary": {
+              "type": "object",
+              "properties": {
+                "totalLines": {
+                  "type": "number"
+                },
+                "added": {
+                  "type": "number"
+                },
+                "removed": {
+                  "type": "number"
+                },
+                "unchanged": {
+                  "type": "number"
+                },
+                "identical": {
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "required": [
+            "diff",
+            "summary"
+          ]
+        },
     },
   ],
 };
