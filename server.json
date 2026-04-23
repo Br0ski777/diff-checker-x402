@@ -12,7 +12,7 @@
   "remotes": [
     {
       "type": "sse",
-      "url": "https://diff-checker-production.up.railway.app/mcp"
+      "url": "https://diff-checker-x402-production.up.railway.app/mcp"
     }
   ]
 }
