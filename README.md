@@ -37,7 +37,7 @@ Any x402-aware client ([`@x402/fetch`](https://www.npmjs.com/package/@x402/fetch
 
 | Tool | Method | Path | Price | Description |
 |---|---|---|---|---|
-| `text_compare_diff` | POST | `/api/diff` | $0.002 | Compare two texts and show line-by-line differences |
+| `text_compare_diff` | POST | `/api/diff` | $0.005 | Compare two texts and show line-by-line differences |
 
 ### `text_compare_diff`
 
