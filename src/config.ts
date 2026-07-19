@@ -9,7 +9,7 @@ export const API_CONFIG: ApiConfig = {
     {
       method: "POST",
       path: "/api/diff",
-      price: "$0.002",
+      price: "$0.005",
       description: "Compare two texts and show line-by-line differences",
       toolName: "text_compare_diff",
       toolDescription: `Use this when you need to compare two pieces of text and identify exactly what changed between them. Returns a structured line-by-line diff with summary statistics.
